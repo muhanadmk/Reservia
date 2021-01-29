@@ -1,0 +1,24 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+header
+{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 57px;
+}
