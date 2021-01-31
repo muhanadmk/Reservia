@@ -4,11 +4,15 @@
     margin: 0;
     background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
-    background-color: #F2F2F2;
 }
 body{
     width: 1314px;
     margin: 0 auto;
+}
+img{
+    border-top: 4px solid red;
+    border-radius: 15px;
+    
 }
 /* header */
 
@@ -26,7 +30,6 @@ header div {
     align-items: center;
 }
 
-
 header a {
     text-decoration: none;
 }
@@ -42,8 +45,6 @@ li
 span{
     color: black;
 } 
-
-
 
 h1{
     width: 581px;
@@ -65,11 +66,82 @@ h1{
 /* recherch */
 
 .cherch{
-    width: 425px;
+    width: 350px;
+    height: 35px;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    border-radius: 10px;
+    justify-content: space-around;
+    border-right: 1px solid #0065FC;
+    border-left: 1px solid   #F2F2F2 ;
+    border-radius: 15px;
+}
+.cherch p{
+    padding-top: 7px;
+ }
+ 
+ .cherch .recherch p {
+     background-color: #0065FC;
+ }
+/* FLITER */
+
+section{
+    display: flex;
+    margin-top: 33px ;
+}
+
+section .fliter {
+ width: 942px;
+display: flex;
+justify-content: space-between;
+}
+
+/* under-flter */
+
+.under-flter{
+    margin-top: 35px;
+    margin-bottom: 44px;
+    font-size: 15px;
+}
+
+/* section-center */
+
+h2{
+    margin-top: 41px;
+    margin-bottom: 25px;
+    background-color: #F2F2F2;
+}
+.section-center{
+    width: 900px;
+    background-color: #F2F2F2 ;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.section-center p span{
+    background-color: #F2F2F2 ;
+}
 
 
+.article{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2 ;
+}
+ 
+.article2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2 ;
+}
+.article1{
+width: 245px;
+/* border-bottom: 2px solid red;
+border-radius: 1px;
+} */
+footer{
+    border-image: url(im
+}
