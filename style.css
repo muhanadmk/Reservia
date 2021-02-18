@@ -16,6 +16,10 @@
     max-width: 1340px;
     margin: 0 auto;
 }
+img:hover{
+    border-left: 3px solid #4169e1;
+    border-top: 3px solid #4169e1;
+}
 .icon2{
     display: none;
 }
@@ -39,25 +43,23 @@ header
     flex-wrap: wrap;
     margin-top: 15px;
 }
-nav{
+.nav1{
     margin-top: 15px;
-}
- 
-li{
-    margin-left: 63px;
-    list-style-type: none;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.nav1 a{
+margin-left: 68px;
+}
+.nav1 a:hover{
+    border-top: 2px solid blueviolet;
+}
 span{
-    color: black;
-} 
-
+    color: #000000;
+}
 h1{
-    /* max-width: 580px; */
-    font-size: 17px;
-    /* display: flex;
-    justify-content: left; */
+    font-size: 18px;
 }
 
 /* hed paragraph  */
@@ -71,22 +73,23 @@ h1{
 
 .cherch{
     display: flex;
-    /* max-width: 1340px; */
+    max-width: 1340px;
     margin-top: 20px;
+    align-items: center;
 }
 input{
     max-width: 264px;
     height: 45px;
 }
 
-.recherch p{
+.recherch a{
     background-color: #0065fc;
     font-weight: bold;
     color: #ffffff;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 15px; 
-    
+
  }
 
 .icon1{
@@ -215,10 +218,6 @@ section span{
 .images7 h2{
     margin-top: 40px;
 }
-.images7:hover{
-    border: 5px solid #a7b4c7;
-    border-radius: 20px;
-}
 
 .border-under{
     background-color: #ffffff;
@@ -236,22 +235,24 @@ section span{
 
 /* aside */
 
+ aside{
+    max-width: 420px;
+    background-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .poupler{
     display: flex;
     justify-content: space-between;
     margin-top: 22px;
 }
 
-aside{
+.droit2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #F2F2F2;
-    max-width: 420px;
-    border: 4px solid #F2F2F2;
-    border-radius: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .dorit{
@@ -261,10 +262,10 @@ aside{
     max-width: 347px;
     margin-bottom: 30px;
 }
-.dorit:hover{
+/* .dorit:hover{
     border: 5px solid #a7b4c7;
     border-radius: 20px;
-}
+} */
 
 
 .dorit img{
@@ -306,11 +307,14 @@ aside{
     max-width: 1340px;
     margin: 0 auto; 
     background-color: #f9f9f9;
+    border-radius: 15px;
+    padding-bottom: 20px;
 }
 
 .activite h3{
     margin-top: 65px;
     margin-bottom: 25px;
+    padding-top: 10px;
 }
 
 .images-activite{
@@ -318,10 +322,10 @@ aside{
     justify-content: space-between;
     flex-wrap: wrap;   
 }
-/* .ho:hover{
-    border: 5px solid #a7b4c7;
-    border-radius: 20px;
-} */
+.ho img:hover{
+    border-left: 3px solid #4169e1;
+    border-top: 3px solid #4169e1;
+}
 
 .images-activite p{
    padding-left: 10px;
@@ -337,6 +341,10 @@ aside{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding-bottom: -15px;
+}
+ 
+.images-activite .ho{
+    margin-top: 10px
 }
 
 .image-1 img{
@@ -404,38 +412,94 @@ footer a{
     
 }
 
-@media only screen and (width: 320px) {
-    .bolg-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+@media (min-width: 650px) and (max-width: 969px){
+ 
+    .blog-icons{
+        margin: 0px;
+        margin-right: 30px;
+    } 
+    aside{
+        max-width: 768px;
+        padding: 0px;
+        margin: 0 auto;
+        background-color: #F2F2F2;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .droit2{
+        flex-direction: initial;
     }
 
-    .fliter4{
+    .dorit img{
+        width: 225px;
+        height: 115px;
+        object-fit: cover;
+    }
+    .dorit{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        margin-right: 10px;
     }
-  }
-  @media (min-width: 900px) and (max-width: 1280px){
-      aside{
-        display: flex;
-      }
-  }
-
-  @media (max-width: 375px) {
-    ul li{
+    .border{
+        /* background-color: #ffffff; */
+       border-top-right-radius: 15px 
+       border-bottom-right-radius: 15px 
+      
+    }
+    .border i{
         margin: 0px;
     }
+
+}
+  @media (min-width: 970px) and (max-width: 1280px){
+    .blog{
+        max-width: 980px;
+    }  
+    .images-center{
+        max-width: 600px;
+    }
+    aside{
+        max-width: 300px;
+      }
+      .poupler{
+        margin-top: 5px;
+      }
+      .activite{
+          max-width: 980px;
+      }
+      .images-activite .ho{
+       margin: 7px;
+      }
+      .mm{
+        display: flex;
+        flex-direction: inherit;
+        justify-content: space-around;
+        max-width: 980px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      .im img{
+        width: 480px;
+        height: 250px;
+        object-fit: cover;
+      }
+    
+    .blog-image-1{
+       display: flex;
+       /* flex-wrap: wrap; */
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 450px){
     .cherch{
-        width: 340px;
+        max-width: 340px;
         margin: 10px auto;
     }
-    .recherch p{
+    .icon4{
         display: none;
     }
     .fliter4{
-        width: 375px;
+        max-width: 375px;
         margin: 0 auto;
     }
     span{
@@ -451,11 +515,6 @@ footer a{
         padding: 15px; 
     }
 
-    .bolg{
-        display: flex;
-       justify-content: flex-start;
-    }
-
     .images-center{
          max-width: 375px;
          background-color:#f9f9f9;
@@ -465,31 +524,42 @@ footer a{
       }
      
       .center1 img{
-        width: 325px;
-        height: 115px;
+        width: 330px;
+        height: 120px;
         object-fit: cover;
       }
-    aside{
-        width: 375px;
+
+     aside{
+        max-width: 425px;
         margin: 0 auto;
         border-radius: 0px;
+        margin-bottom: 20px;
     }
     .activite{
-        width: 340px;
+        max-width: 425px;
         /* margin-left: 20px; */
+
     }
     .images-activite{
        max-width: 375px;
-       margin: 0 auto;
        background-color: #f9f9f9;
        margin: 0 auto;
+        max-width: 320px;
+    }
+    .images-activite .ho{
+        margin-bottom: 15px;
     }
     
     .images-activite img{
-        width: 325px;
-        height: 125px;
+        max-width: 340px;
+        height: 136px;
         object-fit: cover;
         margin: 0 auto;
+    }
+
+    footer{
+        max-width: 425px;
+        padding-left: 23px;
     }
         
     .bolg-footer{
