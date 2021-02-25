@@ -134,7 +134,9 @@ input{
  font-weight: bold;
  margin-left: 50px;
 }
-
+.f-icone:hover{
+    box-shadow: 10px 5px 5px  rgba(0, 0, 0,0.2);
+}
 .filtres p{
     font-weight: bold;
 }
