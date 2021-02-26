@@ -53,7 +53,7 @@ header
 
 nav{
     display: flex;
-    justify-content:space-between
+    justify-content:space-between;
     margin-top: 15px;
 }
 nav p{
@@ -297,8 +297,8 @@ article a{
 }
 .border{
     background-color: #ffffff;
-   border-top-right-radius: 15px #ffffff;
-   border-bottom-right-radius: 15px #ffffff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .border i{
     margin-top: 70px;
@@ -352,7 +352,6 @@ article a{
 .images-activite img{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    padding-bottom: -15px;
 }
  
 .images-activite .hotel2{
@@ -393,7 +392,6 @@ object-fit: cover;
 }
 .image-1{
     border: 2px solid #ffffff;
-    box-shadow: 5px red;
     border-radius: 15px;
 }
 .images-activite p{    
@@ -404,7 +402,6 @@ object-fit: cover;
 .images-activite .hotel2{
     border: 5px solid #ffffff;
     border-radius: 15px;
-    box-shadow: red;
 }
 
 /* footer */
@@ -460,10 +457,8 @@ background-color: #f2f2f2;
         margin-right: 10px;
     }
     .border{
-        /* background-color: #ffffff; */
        border-top-right-radius: 15px 
-       border-bottom-right-radius: 15px 
-      
+       border-bottom-right-radius: 15px;
     }
     .border i{
         margin: 0px;
@@ -563,7 +558,6 @@ background-color: #f2f2f2;
     .bouton-hebergement2 {
         border-bottom: 2px solid #f2f2f2;
     }
-
     .bouton-activite2 p{
         padding:42px 66px 42px 61px;
         color: black;
@@ -571,7 +565,6 @@ background-color: #f2f2f2;
     .bouton-hebergement2 p{
        padding: 42px;
     }
-
     .bouton-activite2:hover{
         border-color: #0065FC;
     }
@@ -590,8 +583,6 @@ background-color: #f2f2f2;
     }
     .filtres{
         max-width: 325px;
-        /* display: flex;
-        flex-direction: column; */
         margin: 0 auto;
         margin-top: 30px;
     }
@@ -625,7 +616,7 @@ background-color: #f2f2f2;
       }
      
       .Hotel img{
-        width: 325px;
+        width: 320px;
         height: 120px;
         object-fit: cover;
       }
@@ -642,8 +633,6 @@ background-color: #f2f2f2;
     }
     .activite{
         max-width: 325px;
-        /* margin-left: 20px; */
-
     }
     .images-activite{
        max-width: 325px;
@@ -654,7 +643,7 @@ background-color: #f2f2f2;
     }
     
     .images-activite img{
-        max-width: 325px;
+        width: 320px;
         height: 136px;
         object-fit: cover;
         margin: 0 auto;
@@ -695,5 +684,13 @@ background-color: #f2f2f2;
     }
     .bouton-activite2 p{
         padding: 42px 37px 42px 58px;
+    }
+    aside{
+        padding: 0;
+        margin-left: 8px;
+        border-radius: 15px;
+    }
+    .footer-color{
+        padding-left: 10px;
     }
 }
