@@ -456,8 +456,8 @@ background-color: #f2f2f2;
         flex-direction: column;
         margin-right: 10px;
     }
-    .border{
-       border-top-right-radius: 15px 
+    .border {
+       border-top-right-radius: 15px;
        border-bottom-right-radius: 15px;
     }
     .border i{
